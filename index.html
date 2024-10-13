@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Quiz</title>
+    <style>
+        body {
+            background-image: url("https://avatars.mds.yandex.net/get-entity_search/5735732/791114449/SUx182_2x"); /* Замените на реальную ссылку на изображение тыквы */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: orange;
+            text-shadow: 2px 2px 5px black;
+        }
+        .question {
+            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .options {
+            margin: 10px 0;
+        }
+        button {
+            background-color: orange;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ffa500;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Halloween Quiz</h1>
+
+    <div class="question">
+        <p>1. What color is a pumpkin?</p>
+        <div class="options">
+            <input type="radio" id="q1a" name="q1" value="A">
+            <label for="q1a">A) Green</label><br>
+            <input type="radio" id="q1b" name="q1" value="B">
+            <label for="q1b">B) Orange</label><br>
+            <input type="radio" id="q1c" name="q1" value="C">
+            <label for="q1c">C) Blue</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>2. What animal flies at night and says “hoot”?</p>
+        <div class="options">
+            <input type="radio" id="q2a" name="q2" value="A">
+            <label for="q2a">A) Dog</label><br>
+            <input type="radio" id="q2b" name="q2" value="B">
+            <label for="q2b">B) Owl</label><br>
+            <input type="radio" id="q2c" name="q2" value="C">
+            <label for="q2c">C) Cat</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>3. What do kids say when they knock on doors for candy?</p>
+        <div class="options">
+            <input type="radio" id="q3a" name="q3" value="A">
+            <label for="q3a">A) Merry Christmas</label><br>
+            <input type="radio" id="q3b" name="q3" value="B">
+            <label for="q3b">B) Trick or treat</label><br>
+            <input type="radio" id="q3c" name="q3" value="C">
+            <label for="q3c">C) Happy Easter</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>4. Which creature has sharp teeth and drinks blood?</p>
+        <div class="options">
+            <input type="radio" id="q4a" name="q4" value="A">
+            <label for="q4a">A) Ghost</label><br>
+            <input type="radio" id="q4b" name="q4" value="B">
+            <label for="q4b">B) Vampire</label><br>
+            <input type="radio" id="q4c" name="q4" value="C">
+            <label for="q4c">C) Witch</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>5. What do you wear on Halloween?</p>
+        <div class="options">
+            <input type="radio" id="q5a" name="q5" value="A">
+            <label for="q5a">A) A costume</label><br>
+            <input type="radio" id="q5b" name="q5" value="B">
+            <label for="q5b">B) A swimsuit</label><br>
+            <input type="radio" id="q5c" name="q5" value="C">
+            <label for="q5c">C) Pajamas</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>6. Which animal is famous for being a Halloween cat?</p>
+        <div class="options">
+            <input type="radio" id="q6a" name="q6" value="A">
+            <label for="q6a">A) White cat</label><br>
+            <input type="radio" id="q6b" name="q6" value="B">
+            <label for="q6b">B) Black cat</label><br>
+            <input type="radio" id="q6c" name="q6" value="C">
+            <label for="q6c">C) Red cat</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>7. What date is Halloween celebrated on?</p>
+        <div class="options">
+            <input type="radio" id="q7a" name="q7" value="A">
+            <label for="q7a">A) October 31st</label><br>
+            <input type="radio" id="q7b" name="q7" value="B">
+            <label for="q7b">B) December 25th</label><br>
+            <input type="radio" id="q7c" name="q7" value="C">
+            <label for="q7c">C) January 1st</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>8. Which food is carved and decorated on Halloween?</p>
+        <div class="options">
+            <input type="radio" id="q8a" name="q8" value="A">
+            <label for="q8a">A) Apple</label><br>
+            <input type="radio" id="q8b" name="q8" value="B">
+            <label for="q8b">B) Watermelon</label><br>
+            <input type="radio" id="q8c" name="q8" value="C">
+            <label for="q8c">C) Pumpkin</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>9. Which monster drags its feet when walking?</p>
+        <div class="options">
+            <input type="radio" id="q9a" name="q9" value="A">
+            <label for="q9a">A) Zombie</label><br>
+            <input type="radio" id="q9b" name="q9" value="B">
+            <label for="q9b">B) Fairy</label><br>
+            <input type="radio" id="q9c" name="q9" value="C">
+            <label for="q9c">C) Genie</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <p>10. Which character wears white sheets and is invisible?</p>
+        <div class="options">
+            <input type="radio" id="q10a" name="q10" value="A">
+            <label for="q10a">A) Vampire</label><br>
+            <input type="radio" id="q10b" name="q10" value="B">
+            <label for="q10b">B) Witch</label><br>
+            <input type="radio" id="q10c" name="q10" value="C">
+            <label for="q10c">C) Ghost</label>
+        </div>
+    </div>
+
+    <button onclick="checkAnswers()">Submit</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkAnswers() {
+            let score = 0;
+            let feedback = '';
+
+            // Правильные ответы
+            const answers = {
+                q1: 'B',
+                q2: 'B',
+                q3: 'B',
+                q4: 'B',
+                q5: 'A',
+                q6: 'B',
+                q7: 'A',
+                q8: 'C',
+                q9: 'A',
+                q10: 'C'
+            };
+
+            for (let question in answers) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (userAnswer) {
+                    if (userAnswer.value === answers[question]) {
+                        score++;
+                        feedback += `<p class="correct">${question}: Correct answer: ${userAnswer.nextSibling.textContent}</p>`;
+                    } else {
+                        feedback += `<p class="incorrect">${question}: Incorrect! Correct answer: ${answers[question]}</p>`;
+                    }
+                } else {
+                    feedback += `<p class="incorrect">${question}: No answer selected. Correct answer: ${answers[question]}</p>`;
+                }
+            }
+
+            document.getElementById('result').innerHTML = `Your score is ${score} out of 10.<br>${feedback}`;
+        }
+    </script>
+
+</body>
+</html>
